@@ -1,0 +1,74 @@
+th {
+    text-align: left;
+}
+
+table, th, td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+html, body {
+    background-color: #fefefe;
+}
+
+body {
+    margin: 0;
+    padding: 10px;
+}
+
+body {
+    background: url('../imgs/gradient_bg.png') repeat-x;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    text-decoration: underline;
+    font-family: Arial, sans-serif;
+    text-align: center  ;
+}
+
+nav {
+    text-align: center;
+}
+
+body {
+    padding: 10px 30px;
+}
+
+article {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+header {
+    border: 1px dashed white;
+    padding: 5px 20px;
+}
+
+footer p {
+    text-align: center;
+    border: 1px solid #DD9999;
+    border-radius: 3px;
+    padding: 10px 5px;
+}
+
+.b-logo {
+    border: 1px solid blue;
+    padding: 5px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+fieldset {
+    margin-bottom: 15px;
+    padding: 10px;
+}
