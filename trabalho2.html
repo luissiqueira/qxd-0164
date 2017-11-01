@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Conversas Paralelas</title>
+    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/trabalho2.css">
+    <script type="application/javascript" src="js/trabalho2.js"></script>
+</head>
+<body>
+
+<div id="main-container">
+    <header>
+        <h2 class="app-name">Conversas Paralelas</h2>
+        <nav class="app-main-menu">
+            <a href="#" id="btn-login">Entrar</a>
+            <a id="btn-logged-user"></a>
+            <a href="#" id="btn-logout">Sair</a>
+        </nav>
+    </header>
+    <div class="app-container">
+        <aside class="contacts-menu">
+            <h3 class="header">Grupos</h3>
+            <ul class="contact-list">
+            </ul>
+            <div class="btn-create-group">
+                Criar Grupo
+            </div>
+        </aside>
+        <section class="talks-container">
+            <div class="empty-messages">
+                <p>
+                    Selecione uma conversa ao lado para visualizar os detalhes.
+                </p>
+            </div>
+
+            <div class="header">
+                <h4></h4>
+            </div>
+
+            <div class="messages-container">
+            </div>
+
+            <div class="form-container">
+                <input type="text" id="message-to-send" placeholder="Digite uma mensagem"/>
+            </div>
+        </section>
+    </div>
+</div>
+
+<div id="login-container">
+    <div class="box-login">
+        <h3>Informe o seu nome</h3>
+        <input type="text" id="username-to-register" placeholder=""/>
+        <input type="submit" id="submit-to-register" value="Entrar"/>
+    </div>
+</div>
+
+<div id="create-group-container">
+    <div class="box-group">
+        <h3>Informe o nome do grupo</h3>
+        <input type="text" id="group-name" placeholder=""/>
+
+        <h3>Informe o id do grupo</h3>
+        <input type="text" id="group-id" placeholder=""/>
+
+        <input type="submit" id="submit-group" value="Cadastrar Grupo"/>
+    </div>
+</div>
+
+</body>
+</html>

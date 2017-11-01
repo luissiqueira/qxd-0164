@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background: #EFEFEF;
+    font-family: 'Lato', Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+nav {
+    margin-bottom: 20px;
+}
+
+header {
+    background: dodgerblue;
+    padding: 10px 15px;
+    color: #efefef;
+    overflow: auto;
+    height: 60px;
+    box-sizing: border-box;
+}
+
+#main-container {
+    width: 900px;
+    margin: 0 auto;
+    border: 1px solid #aaa;
+    border-top: none;
+    border-bottom: none;
+    display: none;
+}
+
+.app-name {
+    float: left;
+    line-height: 40px;
+}
+
+.app-main-menu {
+    float: right;
+    height: 60px;
+}
+
+.app-main-menu a {
+    display: inline-block;
+    color: #efefef;
+    text-decoration: none;
+    line-height: 40px;
+    padding: 0 10px;
+}
+
+.contact-list {
+    overflow: auto;
+    bottom: 55px;
+    position: absolute;
+    top: 43px;
+    left: 0;
+    right: 0;
+}
+
+.app-container {
+    height: calc(100vh - 60px);
+}
+
+.contacts-menu {
+    height: 100%;
+    width: 30%;
+    min-width: 200px;
+    float: left;
+    border-right: 1px solid #aaa;
+    overflow: hidden;
+    position: relative;
+}
+
+.talks-container {
+    height: 100%;
+    float: right;
+    width: calc(70% - 1px);
+    position: relative;
+}
+
+.contact {
+    padding: 10px;
+    overflow: auto;
+    background: white;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.contact:hover {
+    background: #dddddd;
+}
+
+.contact .contact-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    float: left;
+    border: 1px solid #dedede;
+}
+
+.contact .contact-info {
+    float: left;
+    margin-left: 10px;
+    max-width: 190px;
+    color: #333;
+}
+
+.contact .contact-name {
+    margin-top: 3px;
+    margin-bottom: 5px;
+    overflow: hidden;
+    word-wrap: break-word;
+    white-space: nowrap;
+}
+
+.contact .contact-last-message {
+    overflow: hidden;
+    font-size: 14px;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    white-space: nowrap;
+}
+
+.header {
+    background: white;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.messages-container {
+    position: absolute;
+    background: white;
+    top: 40px;
+    bottom: 60px;
+    left: 0;
+    right: 0;
+    overflow: auto;
+    padding: 10px;
+
+    display: flow-root;
+}
+
+.messages-container .message {
+    background: rgba(50, 143, 255, 0.45);
+    padding: 5px;
+    border-radius: 8px;
+    max-width: 340px;
+    color: #000;
+    margin-bottom: 15px;
+    clear: both;
+}
+
+.messages-container .message .contact-name {
+    border-bottom: 1px solid #888;
+    width: 100%;
+    display: block;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.messages-container .message .time {
+    font-size: 10px;
+    text-align: right;
+    display: inline-block;
+    width: 100%;
+}
+
+.messages-container .message .contact-message {
+    font-size: 14px;
+}
+
+.messages-container .message.received {
+    float: left;
+}
+
+.messages-container .message.send {
+    float: right
+}
+
+.clearfix {
+    clear: both;
+}
+
+.form-container {
+    position: absolute;
+    height: 60px;
+    background: #efefef;
+    border-top: 1px solid #aaa;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
+    padding: 10px 20px;
+}
+
+.form-container input {
+    width: 100%;
+    height: 90%;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+
+.empty-messages {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: white;
+    z-index: 999;
+}
+
+.empty-messages p {
+    text-align: center;
+    height: 100%;
+    line-height: calc(100vh - 60px);
+}
+
+#login-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 9999999;
+}
+
+.box-login {
+    width: 400px;
+    height: 200px;
+    background: whitesmoke;
+    margin-left: calc(50% - 200px);
+    margin-top: 200px;
+}
+
+.box-login h3 {
+    padding: 20px;
+}
+
+.box-login input[type=text] {
+    width: 360px;
+    outline: none;
+    border: 1px solid gray;
+    border-radius: 8px;
+    margin: 10px 20px 0 20px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+
+.box-login input[type=submit] {
+    width: 360px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    margin: 30px 20px 0 20px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+
+#create-group-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 9999999;
+    display: none;
+}
+
+.box-group {
+    width: 400px;
+    height: 300px;
+    background: whitesmoke;
+    margin-left: calc(50% - 200px);
+    margin-top: 200px;
+}
+
+.box-group h3 {
+    padding: 20px;
+}
+
+.box-group input[type=text] {
+    width: 360px;
+    outline: none;
+    border: 1px solid gray;
+    border-radius: 8px;
+    margin: 10px 20px 0 20px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+
+.box-group input[type=submit] {
+    width: 360px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    margin: 30px 20px 0 20px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+
+.btn-create-group {
+    position: absolute;
+    background: dodgerblue;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 18px;
+    height: 55px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    box-sizing: border-box;
+}
